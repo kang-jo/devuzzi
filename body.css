@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: inherit;
+    background: #0f172a;
+    overflow-x: hidden;
+}
+
+.container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.kiri {
+    color: white;
+    flex: 1;
+    padding: 20px;
+    position: sticky;
+    margin-left: 450px;
+    top: 0;
+}
+
+.kanan {
+    flex: 1;
+    padding: 20px;
+    padding-right: 400px;
+    max-width: calc(29% - 0%);
+}
+
+.custom-text {
+    color: #94A3B8;
+    transition: color 0.3s, font-size 0.3s;
+    font-size: 16;
+    cursor: pointer;
+}
+
+.custom-text:hover {
+    font-weight: 500;
+    color: #E2E8F0;
+    font-size: 48px;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+h1{
+    font-family: 'Outfit', sans-serif;
+    color: #E2E8F0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 0.5;
+}
+h2{
+    font-family: 'Poppins', sans-serif;
+    color: #E2E8F0;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: inherit;
+}
+p, a{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: #94A3B8;
+    font-size: 16px;
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+p.judul {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin-top: 0.5;
+    margin-bottom: 0.5;
+}
+p.deskripsi {
+  margin: 5px 0 0 0;
+  font-size: 14px;
+}
+
+::selection {
+    background-color: lightcyan;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+img {
+  width: 125.3px;
+  height: 72.2px;
+  margin-right: 10px;
+}
+
+.ukuran-gambar {
+    width: 100px;
+    height: auto;
+}
+
+.gambar-bawah {
+    position: absolute;
+    width: 50;
+    height: auto;
+    bottom: ;
+}
+
+.content {
+  flex: 1;
+}
+

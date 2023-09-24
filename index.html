@@ -1,0 +1,135 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Outfit:wght@300;700&family=Poppins:wght@300;500&display=swap');
+      ul li {
+        list-style-type: none;
+      }
+      .project-item {
+        position: relative;
+        overflow: hidden;
+        transition: transform 0.2s;
+      }
+
+      .project-item::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(86, 215, 212, 0.2);
+        transform: scale(0);
+        transition: transform 0.3s;
+        z-index: -1;
+      }
+
+      .project-item:hover::before {
+        transform: scale(1);
+      }
+    </style>
+    <title id="about">Devan Al Fauzi</title>
+    <link rel="icon" type="image/png" sizes="500x500" href="devan.png">
+    <link rel="stylesheet" href="body.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="kiri">
+        <div style="position: fixed;">
+          <h1>Devan Al Fauzi</h1>
+          <h2>Elektronika dan Instrumentasi</h2>
+          <h2>Universitas Gadjah Mada</h2>
+          <p style="max-width: 360px;">Saya adalah mahasiswa yang memiliki minat dalam bidang computer vision.</p>
+          <br><br>
+          <br><a href="#about" style="font-size: 14;" class="custom-text">ABOUT<br></a>
+          <br><a href="#project" style="font-size: 14;" class="custom-text"> PROJECT<br></a>
+          <br><a href="#contact" style="font-size: 14;" class="custom-text">CONTACT<br></a>
+          <a href="https://github.com/kang-jo" target="_blank">
+            <img src="git.png" alt="Email" class="gambar-bawah" style="position: fixed; bottom: 50; left: 450;">
+          </a>
+          <a href="https://linkedin.com/in/devan-al-fauzi" target="_blank">
+            <img src="inke.png" alt="Email" class="gambar-bawah" style="position: fixed; bottom: 50; left: 500;">
+          </a>
+        </div>
+      </div>
+      <div class="kanan">
+        <div class="background"></div>
+        <script src="script.js"></script>
+        <h2>About Me</h2>
+        <p>Awal mula saya menyukai dunia IT adalah saya suka dalam pembuatan website, pada 2016 saya mulai membuat website pertama saya, lalu saya tertarik dengan pengembangan bot otomatisasi <span class="highlight"><a href="https://en.wikipedia.org/wiki/Web_scraping" target="_blank" style="color: #E2E8F0;">web scraping</a></span> yang digunakan untuk analisis harga pasaran marketplace seperti <span class="highlight"><a href="https://shopee.co.id/" target="_blank" style="color: #E2E8F0;">Shopee</a></span>, <span class="highlight"><a href="https://tokopedia.com/" target="_blank" style="color: #E2E8F0;">Tokopedia</a></span>.</p>
+        <p>Saya mulai tertarik dengan <span class="highlight"><a href="https://en.wikipedia.org/wiki/Computer_vision/" target="_blank" style="color: #E2E8F0;">computer vision</a></span> karena saya tertarik dengan cara komputer bisa mengambil citra dari dunia kita. Saya mengawali dengan menggunakan algoritma <span class="highlight"><a href="https://www.analyticsvidhya.com/blog/2022/04/object-detection-using-haar-cascade-opencv/#:~:text=Haar%20cascade%20is%20an%20algorithm,%2C%20buildings%2C%20fruits%2C%20etc." target="_blank" style="color: #E2E8F0;">Haar Cascade</a></span> untuk mendeteksi wajah dan saat ini saya berfokus dalam pembuatan perangkat lunak yang dilatih untuk mengenali suatu objek dengan algoritma <span class="highlight"><a href="https://www.baeldung.com/cs/yolo-algorithm#:~:text=YOLO%20algorithm%20aims%20to%20predict,)" target="_blank" style="color: #E2E8F0;">YOLO</a></span>. </p>
+        <p>Selain menatap monitor berjam-jam saya juga menyukai olahraga ringan seperti joging, bersepeda, dan ping-pong.</p>
+        <br><br><br>
+        <h2 id="project">Project</h2>
+        <div>
+          <ul>
+            <li class="project-item">
+              <img src="shopee.png" alt="Shopee BOT">
+              <div class="content">
+                <p style="color: #E2E8F0" class="judul">Shopee Bot</p>
+                <p class="deskripsi">Program otomatisasi shopee untuk mendapatkan data suatu produk dan melakukan otomatisasi pembelian menggunakan bahasa PHP.<br><br>#PHP #bot #scraping</p>
+              </div>
+            </li>
+            <li class="project-item">
+              <img src="faceDetection.png" alt="Face Detection">
+              <div class="content">
+                <p style="color: #E2E8F0" class="judul">Face Detector</p>
+                <p class="deskripsi">Face detection dengan menggunakan program python dan algoritma Haar Cascade, bisa untuk mendeteksi beberapa wajah sekaligus.<br><br>#Python #Detector #Haar #Cascade</p>
+              </div>
+            </li>
+            <li class="project-item">
+              <img src="telegram.png" alt="Telegram OTP">
+              <div class="content">
+                <p style="color: #E2E8F0" class="judul">Telegram OTP Bot</p>
+                <p class="deskripsi">Integrasi bot Telegram dengan Twilio API menggunakan python berguna untuk membuat suatu layanan yang memerlukan verifikasi OTP.<br><br>#Python #Telegram #Twilio #OTP</p>
+              </div>
+            </li>
+            <li class="project-item">
+              <img src="discord.png" alt="Discord OTP">
+              <div class="content">
+                <p style="color: #E2E8F0" class="judul">Discord OTP Bot</p>
+                <p class="deskripsi">Integrasi bot Discord dengan Twilio API menggunakan python berguna untuk membuat suatu layanan yang memerlukan verifikasi OTP.<br><br>#Python #Telegram #Twilio #OTP</p>
+              </div>
+            </li>
+            <li class="project-item">
+              <img src="objectClass.png" alt="Object Classification">
+              <div class="content">
+                <p style="color: #E2E8F0" class="judul">Object Classification</p>
+                <p class="deskripsi">Program python dengan menggunakan algoritma YOLO untuk mengidentifikasi objek objek dalam gambar. Coming Soon<br><br>#Python #Classification #YOLO #Neural</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <br><br><br>
+        <h2 id="contact">Contact</h2>
+        <div>
+          <ul class="contact-menu">
+            <li>
+                <img src="mail.png" alt="Email" class="ukuran-gambar">
+                <a href="mailto:devanalfauzi@mail.ugm.ac.id">Mail</a>
+            </li>
+            <li>
+                <img src="twit.png" alt="Twitter" class="ukuran-gambar">
+                <a href="https://twitter.com/nanauda837" target="_blank">Twitter</a>
+            </li>
+            <li>
+                <img src="ig.png" alt="Instagram" class="ukuran-gambar">
+                <a href="https://www.instagram.com/dev.alfz" target="_blank">Instagram</a>
+            </li>
+            <li>
+                <img src="tele.png" alt="Telegram" class="ukuran-gambar">
+                <a href="https://t.me/pOdbYy" target="_blank">Telegram</a>
+            </li>
+            <li>
+                <img src="line.png" alt="Line" class="ukuran-gambar">
+                <a href="https://line.me/R/alfazz7" target="_blank">Line</a>
+            </li>
+          </ul>
+        </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
